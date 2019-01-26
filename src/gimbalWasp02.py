@@ -141,8 +141,8 @@ net.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
 
 #Misc vars
 font = cv2.FONT_HERSHEY_SIMPLEX
-frameWidth = 320
-frameHeight = 240
+frameWidth = 300
+frameHeight = 300
 framesPerSec = 24
 ##frameWidth = 640
 ##frameHeight = 480
@@ -158,9 +158,9 @@ confThreshold = 0.5
 #well this is interesting, we can closely match the input of the network!
 #this 'seems' to have improved accuracy!
 camera = PiCamera()
-camera.resolution = (320, 240)
+camera.resolution = (300, 300)
 camera.framerate = 20
-rawCapture = PiRGBArray(camera, size=(320, 240)) 
+rawCapture = PiRGBArray(camera, size=(300, 300)) 
 
 # allow the camera to warmup
 time.sleep(0.1)
