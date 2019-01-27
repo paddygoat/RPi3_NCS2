@@ -134,7 +134,7 @@ with open(labels_file, 'r') as f:
 # Note cv2.dnn.blobFromImage, the size is present in the XML files, we could write a preamble to go get that data,
 # Then we dont have to explicitly set it!
 # Load the model
-net = cv2.dnn.readNet('models/wasp.xml', 'models/wasp.bin')
+net = cv2.dnn.readNet('models/face-detection-retail-0004.xml', 'models/face-detection-retail-0004.bin')
 
 
 # Specify target device
